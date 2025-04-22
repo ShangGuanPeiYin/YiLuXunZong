@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="renderer" content="webkit" />
+		<meta name="screen-orientation" content="portrait" />
+		<meta name="x5-orientation" content="portrait" />
+		<title>医路寻踪——中医文化传承可视化设计</title>
+		<link rel="stylesheet" type="text/css" href="css/swiper-5.2.0.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body>
+		<div class="top">
+			<div class="w1200 cont">
+				<ul>
+					<li>
+						<a href="index.html">网站首页</a>
+					</li>
+					<li>
+						<a href="history.html">千年流变</a>
+					</li>
+				</ul>
+				<a href="" class="logo"><img src="images/logo.png" /></a>
+				<ul>
+                    <li>
+						<a href="herbs.html">药材方剂</a>
+					</li>
+					<li>
+						<a href="cases.html">辨证施治</a>
+					</li>
+					<li class="on">
+						<a href="development.html">走向世界</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+        <style>
+            /* 修改图文部分布局 */
+            .img-text-section .container {
+                display: flex;
+                flex-direction: row;  /* 恢复默认排列方向 */
+                justify-content: space-between;
+                align-items: center;
+            }
+            
+            /* 调整元素顺序 */
+            .img-box {
+                order: 1;  /* 图片排在左侧 */
+                flex: 0 0 48%;
+            }
+            
+            /* 其他保持原有样式 */
+            .full-img-section {
+                padding: 40px 0 20px;
+                margin-bottom: -30px;
+                background: transparent;
+            }
+            .main-banner {
+                width: 800px;
+                height: auto;
+                margin: 0 auto;
+            }
+            /* 新版文字居中样式 */
+            .img-text-section .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .text-box {
+                max-width: 1080px;  /* 控制文本框最大宽度 */
+                width: 90%;
+                font-size: 20px;  /* 基础字号可调 */
+                line-height: 1.8;
+                padding: 30px 40px;
+                margin: 20px auto;
+                background: rgba(255, 251, 245, 0.95);
+                border-radius: 12px;
+                box-shadow: 0 4px 15px rgba(212,107,8,0.05);
+            }
+
+            </style>
+            <div class="img-text-section">
+                <div class="container w1200">
+                    <div class="text-box">
+                        <p style="font-size:0.9em; line-height:1.8; margin-bottom:1.2em;">随着中华民族的伟大复兴，中医药，作为中华文化的瑰宝，必将随之传播更远。目前，中医药已经传播到超过190个国家和地区。2021年国家中医药管理局出台《推进中医药高质量融入共建“一带一路”发展规划（2021-2025年）》。即在2021-2025年期间，我国将与一带一路多个国家一起共建30个中医药海外中心，颁布30项中医药国际标准，同时还将建设50个中医药国际合作基地等。</p>
+                        <p style="font-size:0.9em; line-height:1.8; margin-bottom:1.2em;">中医药是中华民族的瑰宝，历久弥新，必将行且致远。历经中医药发展中的曲折，妄自菲薄不利于医药行业的发展，然而也不能仅仅看到一些信息，就盲目喜悦。中医药走向全球，还有很长的路要走，这里面既有推广的加持，也需要我们提高对中医药的管理和研究。</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 顶部图片保持原样 -->
+            <div class="full-img-section">
+                <div class="w1200">
+                    <img src="images/yazhou.png" alt="中医在亚洲" class="main-banner">
+                </div>
+            </div>
+            
+            <!-- 修改图文部分结构 -->
+            <div class="img-text-section">
+                <div class="container w1200">
+                    <div class="text-box">
+                        <p style="font-size:0.8em; line-height:1.8; margin-bottom:1.2em;">新加坡有中医医疗机构30余家，中药店开设的中医诊室有1000余家；</p>
+                        <p style="font-size:0.8em; line-height:1.8; margin-bottom:1.2em;">马来西亚经营中药的店铺约3000余家，有中医师工会会员800余人，多数开店兼诊病，以祖传药店为多，在那里甚至不注册也可行医；</p>
+                        <p style="font-size:0.8em; line-height:1.8; margin-bottom:1.2em;">泰国政府承认中医药的合法地位，1987年就批准了中草药议案。有中药店800余家，较大的中药批发商约为10家，中小型约为40家。多有坐常中医师诊病，也有许多私立中医院广泛应用中草药和针灸进行治病；</p>
+                        <p style="font-size:0.8em; line-height:1.8; margin-bottom:1.2em;">越南很早就提出东医与西医相结合，规模较大的中药店有近200家，中小药店更是遍布城乡。现从我出口到越的中成药就有180种，我国共有16家药品生产企业获得在越南的经营许可证；</p>
+                        <p style="font-size:0.8em; line-height:1.8; margin-bottom:1.2em;"> 日本自上世纪80年代后，汉方医学在日本发展迅速起来，从事针灸推拿的医务人员约10万，从事汉方医药研究人员近3万。有汉方医学专业研究机构10多个，有44所公立或私立的药科大学或医科大学的药学部也都建立了专门的生药研究部门，还有20余所综合性大学设有汉方医学研究组织……</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="full-img-section">
+                <div class="w1200">
+                    <img src="images/ouzhou.png" alt="中医在欧洲" class="main-banner">
+                </div>
+            </div>
+            
+            <!-- 修改图文部分结构 -->
+            <div class="img-text-section">
+                <div class="container w1200">
+                    <div class="text-box">
+                        <p style="font-size:0.8em; line-height:1.8; margin-bottom:1.2em;">英国是当年欧共体的第三大中草药市场。中医是16世纪传入英国的，17世纪被人们接受，近几年，因中药疗效显著采取默认许可，一批国内本科毕业生已经出现在英国中医队伍中。中国的医药还受到皇家的信赖，女皇每次外出旅游，总是带着顺势疗法的各种药物，女皇的妹妹玛嘉烈公主，曾用中草药治疗同期性偏头痛，皇太后也赞成用中西医结合的疗法治病。现每年大约有250万英国人采用顺势、中草药、按摩、正骨和针灸疗法，支付医药费用多达9000万英镑。英国现有中药店350余家，60%的中草药从中国进口，英国每年进口药材品达1200余种，其中60%是从中国进口，英国每年进口药材量达8000万美元，在欧洲名列前茅。但从1995年进口中药的情况来看，英国全年进口中药1043万美元，其中中药材9893吨，计1012万美元，中成药约31万美元，还有很大的贸易潜力有待开发。</p>
+                        <p style="font-size:0.8em; line-height:1.8; margin-bottom:1.2em;">德国大约有5万个医生从事中医，并且每年有将近200万个患者接受中医的治疗。在临床医疗中,德国医生把针灸作为临床治疗的一种方法或手段,诊治病人既用西医疗法,也用中药和针灸。但目前仍将其置于各国卫生保险体系之外。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="full-img-section">
+                <div class="w1200">
+                    <img src="images/meizhou.png" alt="中医在美洲" class="main-banner">
+                </div>
+            </div>
+            
+            <!-- 修改图文部分结构 -->
+            <div class="img-text-section">
+                <div class="container w1200">
+                    <div class="text-box">
+                        <p style="font-size:0.8em; line-height:1.8; margin-bottom:1.2em;">美国1987年全美已有2500余名有执照的针灸师,从事针灸医疗工作的达万余人，1989年全美与针灸有关人数增至2万人，目前仅加州有执照针灸师己达8600人(这些针灸师64%是本科大学毕业生),诊所800多家。目前全美有20多个针灸医疗中心,从事针灸研究和治疗,研究项目有200多项,所治疾病主要有冠心病、高血压、糖尿病、关节炎、肥胖症、过敏性疾病、心功能不全等数十种,特别是中药、针灸治疗艾滋病出现了较好苗头而很受关注。现有规模较大的中医、针灸学校20多所,有40多个中医针灸学会或基金会,创办近10种中医、针灸杂志。并在不同地区召开了一些国际性中医药或针灸学术会议,交流研究成果。.美国人每年要花费60亿美元用于营养保健品,而且这一市场以每年增长20%的速度拓展。美国约有5%的患者服用天然药物,其中80%的人在治疗过程中服用中药；</p>
+                        <p style="font-size:0.8em; line-height:1.8; margin-bottom:1.2em;">加拿大约有中医针灸从业者2000余名，中医针灸诊所遍及全国各省。这些诊所大多为华侨开办的，但都附设药店。在加拿大的中医针灸开业者，经济情况都很好，即使受诊所聘用的中医师，按每个病例取酬，每天可诊20余人，收入也不菲。目前，中医药疗法、针灸疗法在加拿大还不能享受医疗保险，病人需要自付医疗费用；</p>
+                        <p style="font-size:0.8em; line-height:1.8; margin-bottom:1.2em;">澳大利亚每年至少有280万人次看中医，中草药的进口量自1992年以来已增长了4倍。在悉尼和墨尔本等大都市，目前分别有2000多名中医师开业行医，其他州首府如布里斯班、阿得雷德和帕斯也都有数百名中医师。各地都成立了中医学会，也有全国性的组织澳大利亚全国中医针灸学会联合会。澳大利亚每年中医医疗保健的营业额达到8400万澳元。而且维多利亚州率先于2000年5月完成了中医立法，是西方第一个对中医药立法的国家，使之拥有与西医一样的法律地位。澳大利亚也是第一个在正规大学设立中医本科教育工作的国家，皇家墨尔本理工大学与南京中医药大学合作创办中医教育已有10年历史。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="full-img-section">
+                <div class="w1200">
+                    <img src="images/feizhou.png" alt="中医在非洲" class="main-banner">
+                </div>
+            </div>
+            
+            <!-- 修改图文部分结构 -->
+            <div class="img-text-section">
+                <div class="container w1200">
+                    <div class="text-box">
+                        <p style="font-size:0.8em; line-height:1.8; margin-bottom:1.2em;">南非政府于2002年2月22日发布了为期6个月的中成药注册登记通告，准许其进入南非市场，这在世界各国尚属首次，目前中国已有100多家企业的300多个品种的中成药利用这个机会进行申请登记，取得合法进入南非补充药物市场的机会。但目前，市场开发力度不够。</p>
+                        <p style="font-size:0.8em; line-height:1.8; margin-bottom:1.2em;">多数非洲国家卫生事业较为落后，是正在崛起的中草药国际市场。1960年以来，中国援非医疗队活跃在坦桑尼亚、赞比亚、莫桑比克、扎伊尔、马里、几内亚比绍等国，不少人了解中医中药与针灸，为中医药在非洲的发展打下了基础。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="full-img-section">
+                <div class="w1200">
+                    <img src="images/zhongdong.png" alt="中医在中东" class="main-banner">
+                </div>
+            </div>
+            
+            <!-- 修改图文部分结构 -->
+            <div class="img-text-section">
+                <div class="container w1200">
+                    <div class="text-box">
+                        <p style="font-size:0.8em; line-height:1.8; margin-bottom:1.2em;">目前，21个阿拉伯国家中，几乎都开设了数量不等的中医诊所和中草药店。1988年，阿联酋成立了中国中医药治疗中心，沙特、阿曼、也门相继商讨引进中医药专家。阿拉伯市场国家政府间的合作刚刚起步，多头办医药，较难理顺。但阿拉伯世界也将会出现一个应用中医药的新纪元。在中东地区，保健、强壮、减肥、美容的中成药很受欢迎。咳嗽糖浆、正红花油、清凉油、风油精等中成药到处有售，售价高出国内许多倍，但产品大多来自港台、东南亚、日、韩甚至欧美国家。</p>
+                    </div>
+                </div>
+            </div>
+
+		<div class="footer">
+			<div class="cont w1200">
+				<div class="div3 div">
+					<h3>数据来源</h3>
+					<p>
+						中医方剂数据库 <br />
+						2020版《中国药典》<br />
+						“十四五”《中药学》教材<br />
+						TCM-SD 中医数据集<br />
+						TCM Ancient Books 中医药古籍数据集<br />
+						中国医药网<br />
+						中医科学网<br />
+						康美中药网
+					</p>
+				</div>
+				<div class="div3 div">
+					<h3>素材来源</h3>
+					<p>
+						bootstrapmb<br />
+						WPS图片<br />
+						百度图片<br />
+					</p>
+				</div>
+				<div class="div3 div">
+					<h3>网站地图</h3>
+					<p>					
+						<a href="">网站首页</a><br />
+						<a href="">千年流变</a><br />
+						<a href="">药材方剂</a><br />
+						<a href="">辩证施治</a><br />
+						<a href="">走向世界</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/swiper-5.2.0.min.js"></script>
+		<script src="js/SuperSlide.2.1.3.js"></script>
+		<script src="js/more.js"></script>
+
+	</body>
+
+</html>
